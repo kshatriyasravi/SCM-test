@@ -1,0 +1,11 @@
+pipeline
+{
+    agent any
+    stages
+    {
+        stage(SCM)
+        {
+            sh 'git clone https://github.com/kshatriyasravi/maven-web-application.git'
+        }
+    }
+}
